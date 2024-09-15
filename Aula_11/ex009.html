@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou não</title>
+</head>
+<body>
+    <p>Sua nacionalidade: <input type="text" name="txtNacionalidade" id="txtNacionalidade"> </p>
+
+    <input type="button" value="Enter" onclick="nacionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        function nacionalidade(){
+            let nacionalidade = window.document.querySelector('input#txtNacionalidade').value.toLowerCase();
+            if(nacionalidade !== "brasil"){
+                alert("Você é estrangeiro!");
+                res.innerHTML = '<p>Você é estrangeiro!<p/>'
+            } else {
+                alert("Você é Brasileiro!");
+                res.innerHTML = '<p>Você é Brasileiro!<p/>'
+            }
+        }
+    </script>
+</body>
+</html>
